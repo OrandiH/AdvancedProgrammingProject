@@ -9,6 +9,11 @@ public class Response implements ResponseMethods,Serializable{
 	private String Action;
 	private int status;
 	private String source;
+	//Credentials for login 
+	private int id;
+
+
+	private String password; 
 	
 	//Constructors
 	//DEFAULT
@@ -61,6 +66,21 @@ public class Response implements ResponseMethods,Serializable{
 	{
 		return this.source;
 	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
+	
+	
 	
 	//METHODS FROM INTERFACE
 	@Override
